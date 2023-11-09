@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_Client">
+
+    <fragment
+        android:id="@+id/nav_Client"
+        android:name="com.example.mazdamaintenance.ui.main.client.ClientFragment"
+        android:label="@string/menu_Client"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_call"
+        android:name="com.example.mazdamaintenance.ui.call.CallFragment"
+        android:label="@string/menu_call"
+        tools:layout="@layout/fragment_call" />
+
+    <fragment
+        android:id="@+id/nav_sms"
+        android:name="com.example.mazdamaintenance.ui.sms.SmsFragment"
+        android:label="@string/menu_sms"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_email"
+        android:name="com.example.mazdamaintenance.MailFragment"
+        android:label="@string/menu_email"
+        tools:layout="@layout/fragment_email" />
+    <fragment
+        android:id="@+id/nav_Rcall"
+        android:name="com.example.mazdamaintenance.ui.records.RecordFragment"
+        android:label="Historial de llamadas"
+        tools:layout="@layout/fragment_recordcallview" />
+    <fragment
+        android:id="@+id/nav_Rsms"
+        android:name="com.example.mazdamaintenance.ui.records.RecordSmsFragment"
+        android:label="Historial de Mensajes"
+        tools:layout="@layout/record_sms_fragment" />
+    <fragment
+        android:id="@+id/nav_Contacts"
+        android:name="com.example.mazdamaintenance.ContactsFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_nav_Contacts_to_nav_call"
+            app:destination="@id/nav_call" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Remail"
+        android:name="com.example.mazdamaintenance.ui.records.RecordEmail"
+        android:label="Bandeja de Correos"
+        tools:layout="@layout/fragment_record_email" />
+</navigation>

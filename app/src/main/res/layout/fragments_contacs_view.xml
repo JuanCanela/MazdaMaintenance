@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:backgroundTint ="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/usuario2" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnViewCall"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/call"/>
+            <ImageView
+                android:id="@+id/btnViewSms"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/sms" />
+
+            <ImageView
+                android:id="@+id/btnViewEmail"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/email" />
+            <ImageView
+                android:id="@+id/btnGps"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/gps" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

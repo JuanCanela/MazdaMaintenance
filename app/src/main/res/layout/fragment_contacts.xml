@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_FContacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/searchview_backgound"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Buscar cliente" >
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/fragments_contacs_view"
+        android:layout_marginTop="4dp"/>
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Client"
+            android:icon="@mipmap/usermail"
+            android:title="@string/menu_Client" />
+        <item
+            android:id="@+id/nav_Contacts"
+            android:icon="@mipmap/usuario2"
+            android:title="Contactos" />
+
+    </group>
+    <item android:title="Historial">
+        <menu>
+            <item
+                android:id="@+id/nav_Rsms"
+                android:title="Mensajes"
+                android:icon="@mipmap/hsms"/>
+            <item
+                android:id="@+id/nav_Rcall"
+                android:title="Llamadas"
+                android:icon="@mipmap/hcall"/>
+            <item
+                android:id="@+id/nav_Remail"
+                android:title="Emails"
+                android:icon="@mipmap/hmail"/>
+        </menu>
+    </item>
+</menu>
